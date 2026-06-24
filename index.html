@@ -1,14 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chand Kirana & General Store</title>
-</head>
-<body>
 
-  <h1>Chand Kirana & General Store</h1>
-  <p>Website under development 🚀</p>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-</body>
-</html>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head><div class="top-strip">
+  🚚 FREE HOME DELIVERY WITHIN 5 KM
+</div>
+
+<header class="header">
+  <div class="logo">
+    <img src="25.png" alt="Chand Kirana">
+  </div>
+
+  <div class="title">
+    <h2>Chand Kirana</h2>
+    <span>& General Store</span>
+  </div>
+
+  <div class="cart">
+    <i class="fa-solid fa-cart-shopping"></i>
+  </div>
+</header>
+
+<div class="category-slider">
+  <div class="track">
+    <a href="index.html">🏠 Home</a>
+    <a href="masale.html">🌶️ Masale</a>
+    <a href="shampoo.html">🧴 Shampoo</a>
+    <a href="dry-fruits.html">🥜 Dry Fruits</a>
+    <a href="rice.html">🍚 Rice</a>
+    <a href="biscuits.html">🍪 Biscuits</a>
+    <a href="oils.html">🛢️ Oils</a>
+    <a href="surfs.html">🫧 Surf</a>
+    <a href="soaps.html">🧼 Soaps</a>
+    <a href="colgate.html">🪥 Colgate</a>
+
+    <!-- repeat for smooth infinite scroll -->
+    <a href="index.html">🏠 Home</a>
+    <a href="masale.html">🌶️ Masale</a>
+    <a href="shampoo.html">🧴 Shampoo</a>
+    <a href="dry-fruits.html">🥜 Dry Fruits</a>
+    <a href="rice.html">🍚 Rice</a>
+    <a href="biscuits.html">🍪 Biscuits</a>
+  </div>
+</div>body{
+    margin:0;
+    font-family:Poppins,sans-serif;
+    background:#f7f7f7;
+}
+
+.top-strip{
+    background:#c40000;
+    color:#fff;
+    text-align:center;
+    padding:10px;
+    font-weight:700;
+}
+
+.header{
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 15px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.logo img{
+    width:60px;
+    border-radius:50%;
+}
+
+.title h2{
+    margin:0;
+    color:#c40000;
+}
+
+.title span{
+    font-size:14px;
+    font-weight:600;
+}
+
+.cart{
+    font-size:24px;
+}
+
+.category-slider{
+    overflow:hidden;
+    background:#fff;
+    padding:12px 0;
+}
+
+.track{
+    display:flex;
+    gap:12px;
+    width:max-content;
+    animation:slide 20s linear infinite;
+}
+
+.track a{
+    text-decoration:none;
+    color:#111;
+    background:#efefef;
+    padding:10px 18px;
+    border-radius:30px;
+    white-space:nowrap;
+    font-weight:600;
+}
+
+.track:hover{
+    animation-play-state:paused;
+}
+
+@keyframes slide{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
